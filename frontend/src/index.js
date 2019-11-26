@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import myreducer from './reducers/myreducer';
+import articlesList from './reducers/myreducer';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
-const store = createStore(combineReducers({ myreducer }));
+const store = createStore(combineReducers({ articlesList }));
 
 ReactDOM.render(
 	<Provider store={store}>
